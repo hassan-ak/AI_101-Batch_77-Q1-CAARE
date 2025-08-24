@@ -1,0 +1,318 @@
+{
+  "name": "Get Started with Google Sheets in n8n",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "3be017cc-04e0-4384-868b-e8169c2cd863",
+      "name": "Run Workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [992, 880],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k",
+          "mode": "list",
+          "cachedResultName": "Batch-77-n8n-demo",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit#gid=0"
+        },
+        "options": {}
+      },
+      "id": "1ddd7bc9-6abe-4f2a-9de3-0f88c0109eda",
+      "name": "Get Rows from Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [1280, 736],
+      "typeVersion": 4.6,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "zuRRyYHwh8Ad5962",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9bceded1-6f62-48a8-8727-6a6a1998d5d3",
+              "name": "Name",
+              "type": "string",
+              "value": "Jahanzaib Tayyab"
+            },
+            {
+              "id": "038dac1c-919b-4a54-b3dd-aa5723bf1f1a",
+              "name": "Email",
+              "type": "string",
+              "value": "jtayyab204@gmail.com"
+            },
+            {
+              "id": "e55a71f6-66d9-4da2-9dbb-0c45539c76a9",
+              "name": "Topic",
+              "type": "string",
+              "value": "n8n workflows"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "7b4b1b34-0d2a-4081-9cc1-811dedd66b97",
+      "name": "Generate 1 Row of Data",
+      "type": "n8n-nodes-base.set",
+      "position": [1568, 1120],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k",
+          "mode": "list",
+          "cachedResultName": "Batch-77-n8n-demo",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 925739058,
+          "mode": "list",
+          "cachedResultName": "Sheet3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit#gid=925739058"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Topic",
+              "displayName": "Topic",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Submitted",
+              "displayName": "Submitted",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "a9b4a11b-fd45-46bf-b1d0-188954ef9b48",
+      "name": "Append Data to google",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [1776, 992],
+      "typeVersion": 4.6,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "zuRRyYHwh8Ad5962",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k",
+          "mode": "list",
+          "cachedResultName": "Batch-77-n8n-demo",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1961100597,
+          "mode": "list",
+          "cachedResultName": "Sheet4",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NaT6cPouWVbVnHbjfYdv3FrkYtAEo018i7KeapgGK_k/edit#gid=1961100597"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "fisrt_name",
+              "displayName": "fisrt_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "last_name",
+              "displayName": "last_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "cef80a95-5ded-4ceb-95e3-21be33725d97",
+      "name": "Update Sheets data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [1760, 768],
+      "typeVersion": 4.6,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "zuRRyYHwh8Ad5962",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "e02db3bd-71ea-49dd-81bf-df4dcc147aba",
+              "leftValue": "={{ $json.email }}",
+              "rightValue": "@gmail.com",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [1488, 736],
+      "id": "aa529e9c-2479-4b04-8139-b1e5f08a7fff",
+      "name": "Filter"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Run Workflow": {
+      "main": [
+        [
+          {
+            "node": "Get Rows from Google Sheets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate 1 Row of Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate 1 Row of Data": {
+      "main": [
+        [
+          {
+            "node": "Append Data to google",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Rows from Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Update Sheets data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "versionId": "e878dcad-1a15-48d2-9659-1a3b1119ecf1",
+  "meta": {
+    "templateId": "7156",
+    "templateCredsSetupCompleted": true,
+    "instanceId": "936ddc0a4e7587347f20db7cd46c7eb8ff5c0bd64c8551bd066798358a3bde10"
+  },
+  "id": "iybCBNV4RxMjKTsd",
+  "tags": []
+}
