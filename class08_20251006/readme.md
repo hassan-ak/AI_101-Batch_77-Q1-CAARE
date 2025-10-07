@@ -6,7 +6,11 @@
 
 ## 📖 **Lessons Covered:** 02, 03, 04
 
----
+## [Panaversity's Learn Modern AI Python](https://github.com/panaversity/learn-modern-ai-python) repository:
+
+### 📓 Class Materials
+
+- [Today's Class Notebook](https://colab.research.google.com/drive/1NP_Vdm5lDePoHMNINx81-G3048rNQd7H?usp=sharing)
 
 ## 🎯 **Learning Objectives Achieved**
 
@@ -245,12 +249,6 @@ By the end of these lessons, students should be able to:
 ---
 
 ## 🎯 **Next Steps**
-
-### **Immediate Practice:**
-
-- Complete Assignment 02 covering all topics
-- Focus on Part F problem-solving questions
-- Practice with real-world scenarios
 
 ### **Upcoming Topics:**
 
